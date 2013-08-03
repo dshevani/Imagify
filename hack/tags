@@ -1,0 +1,333 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+MAX_KEY_SIZE	SENNA_Hash.c	4;"	d	file:
+MAX_SENTENCE_SIZE	SENNA_main.c	17;"	d	file:
+MAX_TARGET_VB_SIZE	SENNA_main.c	18;"	d	file:
+MAX_WORD_SIZE	SENNA_Tokenizer.c	9;"	d	file:
+NN_MAX	SENNA_nn.c	130;"	d	file:
+NN_MIN	SENNA_nn.c	129;"	d	file:
+SENNA_CHK	SENNA_CHK.h	/^} SENNA_CHK;$/;"	t	typeref:struct:SENNA_CHK_
+SENNA_CHK_	SENNA_CHK.h	/^typedef struct SENNA_CHK_$/;"	s
+SENNA_CHK_H	SENNA_CHK.h	2;"	d
+SENNA_CHK_forward	SENNA_CHK.c	/^int* SENNA_CHK_forward(SENNA_CHK *chk, const int *sentence_words, const int *sentence_caps, const int *sentence_posl, int sentence_size)$/;"	f
+SENNA_CHK_free	SENNA_CHK.c	/^void SENNA_CHK_free(SENNA_CHK *chk)$/;"	f
+SENNA_CHK_new	SENNA_CHK.c	/^SENNA_CHK* SENNA_CHK_new(const char *path, const char *subpath)$/;"	f
+SENNA_HASH_H	SENNA_Hash.h	2;"	d
+SENNA_Hash	SENNA_Hash.h	/^} SENNA_Hash;$/;"	t	typeref:struct:SENNA_Hash_
+SENNA_Hash_	SENNA_Hash.h	/^typedef struct SENNA_Hash_$/;"	s
+SENNA_Hash_convert_IOBES_to_IOB	SENNA_Hash.c	/^void SENNA_Hash_convert_IOBES_to_IOB(SENNA_Hash *hash)$/;"	f
+SENNA_Hash_convert_IOBES_to_brackets	SENNA_Hash.c	/^void SENNA_Hash_convert_IOBES_to_brackets(SENNA_Hash *hash)$/;"	f
+SENNA_Hash_free	SENNA_Hash.c	/^void SENNA_Hash_free(SENNA_Hash *hash)$/;"	f
+SENNA_Hash_index	SENNA_Hash.c	/^int SENNA_Hash_index(SENNA_Hash *hash, const char *key)$/;"	f
+SENNA_Hash_is_admissible_index	SENNA_Hash.c	/^char SENNA_Hash_is_admissible_index(SENNA_Hash *hash, int idx)$/;"	f
+SENNA_Hash_key	SENNA_Hash.c	/^const char* SENNA_Hash_key(SENNA_Hash *hash, int idx)$/;"	f
+SENNA_Hash_new	SENNA_Hash.c	/^SENNA_Hash* SENNA_Hash_new(const char *path, const char *filename)$/;"	f
+SENNA_Hash_new_with_admissible_keys	SENNA_Hash.c	/^SENNA_Hash *SENNA_Hash_new_with_admissible_keys(const char *path, const char *filename, const char *admissible_keys_filename)$/;"	f
+SENNA_Hash_size	SENNA_Hash.c	/^int SENNA_Hash_size(SENNA_Hash *hash)$/;"	f
+SENNA_NER	SENNA_NER.h	/^} SENNA_NER;$/;"	t	typeref:struct:SENNA_NER_
+SENNA_NER_	SENNA_NER.h	/^typedef struct SENNA_NER_$/;"	s
+SENNA_NER_H	SENNA_NER.h	2;"	d
+SENNA_NER_forward	SENNA_NER.c	/^int* SENNA_NER_forward(SENNA_NER *ner, const int *sentence_words, const int *sentence_caps, $/;"	f
+SENNA_NER_free	SENNA_NER.c	/^void SENNA_NER_free(SENNA_NER *ner)$/;"	f
+SENNA_NER_new	SENNA_NER.c	/^SENNA_NER* SENNA_NER_new(const char *path, const char *subpath)$/;"	f
+SENNA_NN_H	SENNA_nn.h	2;"	d
+SENNA_POS	SENNA_POS.h	/^} SENNA_POS;$/;"	t	typeref:struct:SENNA_POS_
+SENNA_POS_	SENNA_POS.h	/^typedef struct SENNA_POS_$/;"	s
+SENNA_POS_H	SENNA_POS.h	2;"	d
+SENNA_POS_forward	SENNA_POS.c	/^int* SENNA_POS_forward(SENNA_POS *pos, const int *sentence_words, const int *sentence_caps, const int *sentence_suff, int sentence_size)$/;"	f
+SENNA_POS_free	SENNA_POS.c	/^void SENNA_POS_free(SENNA_POS *pos)$/;"	f
+SENNA_POS_new	SENNA_POS.c	/^SENNA_POS* SENNA_POS_new(const char *path, const char *subpath)$/;"	f
+SENNA_PT0	SENNA_PT0.h	/^} SENNA_PT0;$/;"	t	typeref:struct:SENNA_PT0_
+SENNA_PT0_	SENNA_PT0.h	/^typedef struct SENNA_PT0_$/;"	s
+SENNA_PT0_H	SENNA_PT0.h	2;"	d
+SENNA_PT0_forward	SENNA_PT0.c	/^int* SENNA_PT0_forward(SENNA_PT0 *pt0, const int *sentence_words, const int *sentence_caps, const int *sentence_posl, int sentence_size)$/;"	f
+SENNA_PT0_free	SENNA_PT0.c	/^void SENNA_PT0_free(SENNA_PT0 *pt0)$/;"	f
+SENNA_PT0_new	SENNA_PT0.c	/^SENNA_PT0* SENNA_PT0_new(const char *path, const char *subpath)$/;"	f
+SENNA_SRL	SENNA_SRL.h	/^} SENNA_SRL;$/;"	t	typeref:struct:SENNA_SRL_
+SENNA_SRL_	SENNA_SRL.h	/^typedef struct SENNA_SRL_$/;"	s
+SENNA_SRL_H	SENNA_SRL.h	2;"	d
+SENNA_SRL_forward	SENNA_SRL.c	/^int** SENNA_SRL_forward(SENNA_SRL *srl, const int *sentence_words, const int *sentence_caps, const int *sentence_chkl, const int *sentence_isvb, int sentence_size)$/;"	f
+SENNA_SRL_free	SENNA_SRL.c	/^void SENNA_SRL_free(SENNA_SRL *srl)$/;"	f
+SENNA_SRL_new	SENNA_SRL.c	/^SENNA_SRL* SENNA_SRL_new(const char *path, const char *subpath)$/;"	f
+SENNA_TOKENIZER_H	SENNA_Tokenizer.h	2;"	d
+SENNA_Tokenizer	SENNA_Tokenizer.h	/^} SENNA_Tokenizer;$/;"	t	typeref:struct:SENNA_Tokenizer_
+SENNA_Tokenizer_	SENNA_Tokenizer.h	/^typedef struct SENNA_Tokenizer_$/;"	s
+SENNA_Tokenizer_free	SENNA_Tokenizer.c	/^void SENNA_Tokenizer_free(SENNA_Tokenizer *tokenizer)$/;"	f
+SENNA_Tokenizer_new	SENNA_Tokenizer.c	/^SENNA_Tokenizer* SENNA_Tokenizer_new(SENNA_Hash *word_hash,$/;"	f
+SENNA_Tokenizer_tokenize	SENNA_Tokenizer.c	/^SENNA_Tokens* SENNA_Tokenizer_tokenize(SENNA_Tokenizer *tokenizer, const char *sentence)$/;"	f
+SENNA_Tokens	SENNA_Tokenizer.h	/^} SENNA_Tokens;$/;"	t	typeref:struct:SENNA_Tokens_
+SENNA_Tokens_	SENNA_Tokenizer.h	/^typedef struct SENNA_Tokens_$/;"	s
+SENNA_UTILS_H	SENNA_utils.h	2;"	d
+SENNA_VBS	SENNA_VBS.h	/^} SENNA_VBS;$/;"	t	typeref:struct:SENNA_VBS_
+SENNA_VBS_	SENNA_VBS.h	/^typedef struct SENNA_VBS_$/;"	s
+SENNA_VBS_H	SENNA_VBS.h	2;"	d
+SENNA_VBS_forward	SENNA_VBS.c	/^int* SENNA_VBS_forward(SENNA_VBS *vbs, const int *sentence_words, const int *sentence_caps, const int *sentence_posl, int sentence_size)$/;"	f
+SENNA_VBS_free	SENNA_VBS.c	/^void SENNA_VBS_free(SENNA_VBS *vbs)$/;"	f
+SENNA_VBS_new	SENNA_VBS.c	/^SENNA_VBS* SENNA_VBS_new(const char *path, const char *subpath)$/;"	f
+SENNA_error	SENNA_utils.c	/^void SENNA_error(const char *fmt, ...)$/;"	f
+SENNA_fclose	SENNA_utils.c	/^void SENNA_fclose(FILE *stream)$/;"	f
+SENNA_fgetline	SENNA_utils.c	/^char* SENNA_fgetline(char *str, int size, FILE *stream)$/;"	f
+SENNA_fopen	SENNA_utils.c	/^FILE *SENNA_fopen(const char *path, const char *subpath, const char *mode)$/;"	f
+SENNA_fread	SENNA_utils.c	/^void SENNA_fread(void *ptr, size_t size, size_t nmemb, FILE *stream)$/;"	f
+SENNA_fread_tensor_1d	SENNA_utils.c	/^void SENNA_fread_tensor_1d(float **ptr, int *n_row, FILE *stream)$/;"	f
+SENNA_fread_tensor_2d	SENNA_utils.c	/^void SENNA_fread_tensor_2d(float **ptr, int *n_row, int *n_column, FILE *stream)$/;"	f
+SENNA_free	SENNA_utils.c	/^void SENNA_free(void *ptr)$/;"	f
+SENNA_fseek	SENNA_utils.c	/^void SENNA_fseek(FILE *stream, long offset, int whence)$/;"	f
+SENNA_ftell	SENNA_utils.c	/^long SENNA_ftell(FILE *stream)$/;"	f
+SENNA_malloc	SENNA_utils.c	/^void* SENNA_malloc(size_t size, size_t nitems)$/;"	f
+SENNA_message	SENNA_utils.c	/^void SENNA_message(const char *fmt, ...)$/;"	f
+SENNA_nn_distance	SENNA_nn.c	/^void SENNA_nn_distance(int *dest, int idx, int max_idx, int sentence_size, int padding_size)$/;"	f
+SENNA_nn_hardtanh	SENNA_nn.c	/^void SENNA_nn_hardtanh(float *output, float *input, int size)$/;"	f
+SENNA_nn_linear	SENNA_nn.c	/^void SENNA_nn_linear(float *output, int output_size, float *weights, float *biases, float *input, int input_size)$/;"	f
+SENNA_nn_lookup	SENNA_nn.c	/^void SENNA_nn_lookup(float *dest, int dest_stride, const float *wordweights, int wordsize, int maxwordidx, const int *wordindices, int nword, int padidx, int npad)$/;"	f
+SENNA_nn_max	SENNA_nn.c	/^void SENNA_nn_max(float *value_, int *idx_, float *input, int input_size)$/;"	f
+SENNA_nn_temporal_convolution	SENNA_nn.c	/^void SENNA_nn_temporal_convolution(float *output, int output_frame_size, float *weights, float *biases, float *input, int input_frame_size, int n_frames, int k_w)$/;"	f
+SENNA_nn_temporal_max	SENNA_nn.c	/^void SENNA_nn_temporal_max(float *output, float *input, int N, int T)$/;"	f
+SENNA_nn_viterbi	SENNA_nn.c	/^void SENNA_nn_viterbi(int *path, float *init, float *transition, float *emission, int N, int T)$/;"	f
+SENNA_print_tensor_1d	SENNA_utils.c	/^void SENNA_print_tensor_1d(float *tensor, int nrow)$/;"	f
+SENNA_print_tensor_2d	SENNA_utils.c	/^void SENNA_print_tensor_2d(float *tensor, int nrow, int ncolumn)$/;"	f
+SENNA_realloc	SENNA_utils.c	/^void* SENNA_realloc(void *ptr, size_t size, size_t nitems)$/;"	f
+SENNA_set_verbose_mode	SENNA_utils.c	/^void SENNA_set_verbose_mode(int verbose)$/;"	f
+SENNA_tokenize_alphanumeric	SENNA_Tokenizer.c	/^void SENNA_tokenize_alphanumeric(int *size_, const char *sentence)$/;"	f
+SENNA_tokenize_dictionarymatch	SENNA_Tokenizer.c	/^void SENNA_tokenize_dictionarymatch(int *size_, int *idxhash_, SENNA_Hash *hash, const char *sentence)$/;"	f
+SENNA_tokenize_number	SENNA_Tokenizer.c	/^void SENNA_tokenize_number(int *size_, const char *sentence)$/;"	f
+SENNA_tokenize_untilspace	SENNA_Tokenizer.c	/^void SENNA_tokenize_untilspace(int *size_, const char *sentence)$/;"	f
+USE_BLAS	SENNA_nn.c	13;"	d	file:
+USE_BLAS	SENNA_nn.c	18;"	d	file:
+USE_BLAS	SENNA_nn.c	8;"	d	file:
+buffer_reverse_memory	SENNA_utils.c	/^static void buffer_reverse_memory(void *ptr_, int block_size, int n_blocks)$/;"	f	file:
+caps_hash	SENNA_Tokenizer.h	/^    SENNA_Hash *caps_hash;$/;"	m	struct:SENNA_Tokenizer_
+caps_hash_allcaps_idx	SENNA_Tokenizer.h	/^    int caps_hash_allcaps_idx;$/;"	m	struct:SENNA_Tokenizer_
+caps_hash_hascap_idx	SENNA_Tokenizer.h	/^    int caps_hash_hascap_idx;$/;"	m	struct:SENNA_Tokenizer_
+caps_hash_initcap_idx	SENNA_Tokenizer.h	/^    int caps_hash_initcap_idx;$/;"	m	struct:SENNA_Tokenizer_
+caps_hash_nocaps_idx	SENNA_Tokenizer.h	/^    int caps_hash_nocaps_idx;$/;"	m	struct:SENNA_Tokenizer_
+caps_idx	SENNA_Tokenizer.h	/^    int *caps_idx;$/;"	m	struct:SENNA_Tokens_
+checkhash	SENNA_Tokenizer.c	/^static int checkhash(SENNA_Hash *hash, const char *key)$/;"	f	file:
+entity	SENNA_Tokenizer.h	/^    char *entity;$/;"	m	struct:SENNA_Tokenizer_
+gazl_hash	SENNA_Tokenizer.h	/^    SENNA_Hash *gazl_hash;$/;"	m	struct:SENNA_Tokenizer_
+gazl_idx	SENNA_Tokenizer.h	/^    int *gazl_idx;$/;"	m	struct:SENNA_Tokens_
+gazm_hash	SENNA_Tokenizer.h	/^    SENNA_Hash *gazm_hash;$/;"	m	struct:SENNA_Tokenizer_
+gazm_idx	SENNA_Tokenizer.h	/^    int *gazm_idx;$/;"	m	struct:SENNA_Tokens_
+gazo_hash	SENNA_Tokenizer.h	/^    SENNA_Hash *gazo_hash;$/;"	m	struct:SENNA_Tokenizer_
+gazo_idx	SENNA_Tokenizer.h	/^    int *gazo_idx;$/;"	m	struct:SENNA_Tokens_
+gazp_hash	SENNA_Tokenizer.h	/^    SENNA_Hash *gazp_hash;$/;"	m	struct:SENNA_Tokenizer_
+gazp_idx	SENNA_Tokenizer.h	/^    int *gazp_idx;$/;"	m	struct:SENNA_Tokens_
+gazt_hash	SENNA_Tokenizer.h	/^    SENNA_Hash *gazt_hash;$/;"	m	struct:SENNA_Tokenizer_
+gazt_hash_is_entity_idx	SENNA_Tokenizer.h	/^    int gazt_hash_is_entity_idx;$/;"	m	struct:SENNA_Tokenizer_
+gazt_hash_no_entity_idx	SENNA_Tokenizer.h	/^    int gazt_hash_no_entity_idx;$/;"	m	struct:SENNA_Tokenizer_
+help	SENNA_main.c	/^static void help(const char *name)$/;"	f	file:
+hidden_state	SENNA_CHK.h	/^    float *hidden_state;$/;"	m	struct:SENNA_CHK_
+hidden_state	SENNA_NER.h	/^    float *hidden_state;$/;"	m	struct:SENNA_NER_
+hidden_state	SENNA_POS.h	/^    float *hidden_state;$/;"	m	struct:SENNA_POS_
+hidden_state	SENNA_PT0.h	/^    float *hidden_state;$/;"	m	struct:SENNA_PT0_
+hidden_state	SENNA_VBS.h	/^    float *hidden_state;$/;"	m	struct:SENNA_VBS_
+hidden_state1	SENNA_SRL.h	/^    float *hidden_state1;$/;"	m	struct:SENNA_SRL_
+hidden_state1_pv	SENNA_SRL.h	/^    float *hidden_state1_pv;$/;"	m	struct:SENNA_SRL_
+hidden_state1_pw	SENNA_SRL.h	/^    float *hidden_state1_pw;$/;"	m	struct:SENNA_SRL_
+hidden_state1_size	SENNA_SRL.h	/^    int hidden_state1_size;$/;"	m	struct:SENNA_SRL_
+hidden_state1_wcc	SENNA_SRL.h	/^    float *hidden_state1_wcc;$/;"	m	struct:SENNA_SRL_
+hidden_state2	SENNA_SRL.h	/^    float *hidden_state2;$/;"	m	struct:SENNA_SRL_
+hidden_state3	SENNA_SRL.h	/^    float *hidden_state3;$/;"	m	struct:SENNA_SRL_
+hidden_state3_size	SENNA_SRL.h	/^    int hidden_state3_size;$/;"	m	struct:SENNA_SRL_
+hidden_state_size	SENNA_CHK.h	/^    int hidden_state_size;$/;"	m	struct:SENNA_CHK_
+hidden_state_size	SENNA_NER.h	/^    int hidden_state_size;$/;"	m	struct:SENNA_NER_
+hidden_state_size	SENNA_POS.h	/^    int hidden_state_size;$/;"	m	struct:SENNA_POS_
+hidden_state_size	SENNA_PT0.h	/^    int hidden_state_size;$/;"	m	struct:SENNA_PT0_
+hidden_state_size	SENNA_VBS.h	/^    int hidden_state_size;$/;"	m	struct:SENNA_VBS_
+input_state	SENNA_CHK.h	/^    float *input_state;$/;"	m	struct:SENNA_CHK_
+input_state	SENNA_NER.h	/^    float *input_state;$/;"	m	struct:SENNA_NER_
+input_state	SENNA_POS.h	/^    float *input_state;$/;"	m	struct:SENNA_POS_
+input_state	SENNA_PT0.h	/^    float *input_state;$/;"	m	struct:SENNA_PT0_
+input_state	SENNA_SRL.h	/^    float *input_state;$/;"	m	struct:SENNA_SRL_
+input_state	SENNA_VBS.h	/^    float *input_state;$/;"	m	struct:SENNA_VBS_
+input_state_pv	SENNA_SRL.h	/^    float *input_state_pv;$/;"	m	struct:SENNA_SRL_
+input_state_pw	SENNA_SRL.h	/^    float *input_state_pw;$/;"	m	struct:SENNA_SRL_
+input_state_size	SENNA_CHK.h	/^    int input_state_size;$/;"	m	struct:SENNA_CHK_
+input_state_size	SENNA_NER.h	/^    int input_state_size;$/;"	m	struct:SENNA_NER_
+input_state_size	SENNA_POS.h	/^    int input_state_size;$/;"	m	struct:SENNA_POS_
+input_state_size	SENNA_PT0.h	/^    int input_state_size;$/;"	m	struct:SENNA_PT0_
+input_state_size	SENNA_SRL.h	/^    int input_state_size;$/;"	m	struct:SENNA_SRL_
+input_state_size	SENNA_VBS.h	/^    int input_state_size;$/;"	m	struct:SENNA_VBS_
+input_state_wcc	SENNA_SRL.h	/^    float *input_state_wcc;$/;"	m	struct:SENNA_SRL_
+is_admissible_key	SENNA_Hash.h	/^    char *is_admissible_key;$/;"	m	struct:SENNA_Hash_
+is_little_endian_cpu	SENNA_utils.c	/^static int is_little_endian_cpu()$/;"	f	file:
+is_sorted	SENNA_Hash.h	/^    char is_sorted;$/;"	m	struct:SENNA_Hash_
+is_tokenized	SENNA_Tokenizer.h	/^    int is_tokenized;$/;"	m	struct:SENNA_Tokenizer_
+is_verbose	SENNA_utils.c	/^static int is_verbose = 0;$/;"	v	file:
+keys	SENNA_Hash.h	/^    char **keys;$/;"	m	struct:SENNA_Hash_
+l1_bias	SENNA_CHK.h	/^    float *l1_bias;$/;"	m	struct:SENNA_CHK_
+l1_bias	SENNA_NER.h	/^    float *l1_bias;$/;"	m	struct:SENNA_NER_
+l1_bias	SENNA_POS.h	/^    float *l1_bias;$/;"	m	struct:SENNA_POS_
+l1_bias	SENNA_PT0.h	/^    float *l1_bias;$/;"	m	struct:SENNA_PT0_
+l1_bias	SENNA_SRL.h	/^    float *l1_bias;$/;"	m	struct:SENNA_SRL_
+l1_bias	SENNA_VBS.h	/^    float *l1_bias;$/;"	m	struct:SENNA_VBS_
+l1_weight	SENNA_CHK.h	/^    float *l1_weight;$/;"	m	struct:SENNA_CHK_
+l1_weight	SENNA_NER.h	/^    float *l1_weight;$/;"	m	struct:SENNA_NER_
+l1_weight	SENNA_POS.h	/^    float *l1_weight;$/;"	m	struct:SENNA_POS_
+l1_weight	SENNA_PT0.h	/^    float *l1_weight;$/;"	m	struct:SENNA_PT0_
+l1_weight	SENNA_VBS.h	/^    float *l1_weight;$/;"	m	struct:SENNA_VBS_
+l1_weight_pv	SENNA_SRL.h	/^    float *l1_weight_pv;$/;"	m	struct:SENNA_SRL_
+l1_weight_pw	SENNA_SRL.h	/^    float *l1_weight_pw;$/;"	m	struct:SENNA_SRL_
+l1_weight_wcc	SENNA_SRL.h	/^    float *l1_weight_wcc;$/;"	m	struct:SENNA_SRL_
+l2_bias	SENNA_CHK.h	/^    float *l2_bias;$/;"	m	struct:SENNA_CHK_
+l2_bias	SENNA_NER.h	/^    float *l2_bias;$/;"	m	struct:SENNA_NER_
+l2_bias	SENNA_POS.h	/^    float *l2_bias;$/;"	m	struct:SENNA_POS_
+l2_bias	SENNA_PT0.h	/^    float *l2_bias;$/;"	m	struct:SENNA_PT0_
+l2_bias	SENNA_VBS.h	/^    float *l2_bias;$/;"	m	struct:SENNA_VBS_
+l2_weight	SENNA_CHK.h	/^    float *l2_weight;$/;"	m	struct:SENNA_CHK_
+l2_weight	SENNA_NER.h	/^    float *l2_weight;$/;"	m	struct:SENNA_NER_
+l2_weight	SENNA_POS.h	/^    float *l2_weight;$/;"	m	struct:SENNA_POS_
+l2_weight	SENNA_PT0.h	/^    float *l2_weight;$/;"	m	struct:SENNA_PT0_
+l2_weight	SENNA_VBS.h	/^    float *l2_weight;$/;"	m	struct:SENNA_VBS_
+l3_bias	SENNA_SRL.h	/^    float *l3_bias;$/;"	m	struct:SENNA_SRL_
+l3_weight	SENNA_SRL.h	/^    float *l3_weight;$/;"	m	struct:SENNA_SRL_
+l4_bias	SENNA_SRL.h	/^    float *l4_bias;$/;"	m	struct:SENNA_SRL_
+l4_weight	SENNA_SRL.h	/^    float *l4_weight;$/;"	m	struct:SENNA_SRL_
+labels	SENNA_CHK.h	/^    int *labels;$/;"	m	struct:SENNA_CHK_
+labels	SENNA_NER.h	/^    int *labels;$/;"	m	struct:SENNA_NER_
+labels	SENNA_POS.h	/^    int *labels;$/;"	m	struct:SENNA_POS_
+labels	SENNA_PT0.h	/^    int *labels;$/;"	m	struct:SENNA_PT0_
+labels	SENNA_SRL.h	/^    int **labels;$/;"	m	struct:SENNA_SRL_
+labels	SENNA_VBS.h	/^    int *labels;$/;"	m	struct:SENNA_VBS_
+labels_size	SENNA_SRL.h	/^    int labels_size;$/;"	m	struct:SENNA_SRL_
+ll_caps_max_idx	SENNA_CHK.h	/^    int ll_caps_max_idx;$/;"	m	struct:SENNA_CHK_
+ll_caps_max_idx	SENNA_NER.h	/^    int ll_caps_max_idx;$/;"	m	struct:SENNA_NER_
+ll_caps_max_idx	SENNA_POS.h	/^    int ll_caps_max_idx;$/;"	m	struct:SENNA_POS_
+ll_caps_max_idx	SENNA_PT0.h	/^    int ll_caps_max_idx;$/;"	m	struct:SENNA_PT0_
+ll_caps_max_idx	SENNA_SRL.h	/^    int ll_caps_max_idx;$/;"	m	struct:SENNA_SRL_
+ll_caps_max_idx	SENNA_VBS.h	/^    int ll_caps_max_idx;$/;"	m	struct:SENNA_VBS_
+ll_caps_padding_idx	SENNA_CHK.h	/^    int ll_caps_padding_idx;$/;"	m	struct:SENNA_CHK_
+ll_caps_padding_idx	SENNA_NER.h	/^    int ll_caps_padding_idx;$/;"	m	struct:SENNA_NER_
+ll_caps_padding_idx	SENNA_POS.h	/^    int ll_caps_padding_idx;$/;"	m	struct:SENNA_POS_
+ll_caps_padding_idx	SENNA_PT0.h	/^    int ll_caps_padding_idx;$/;"	m	struct:SENNA_PT0_
+ll_caps_padding_idx	SENNA_SRL.h	/^    int ll_caps_padding_idx;$/;"	m	struct:SENNA_SRL_
+ll_caps_padding_idx	SENNA_VBS.h	/^    int ll_caps_padding_idx;$/;"	m	struct:SENNA_VBS_
+ll_caps_size	SENNA_CHK.h	/^    int ll_caps_size;$/;"	m	struct:SENNA_CHK_
+ll_caps_size	SENNA_NER.h	/^    int ll_caps_size;$/;"	m	struct:SENNA_NER_
+ll_caps_size	SENNA_POS.h	/^    int ll_caps_size;$/;"	m	struct:SENNA_POS_
+ll_caps_size	SENNA_PT0.h	/^    int ll_caps_size;$/;"	m	struct:SENNA_PT0_
+ll_caps_size	SENNA_SRL.h	/^    int ll_caps_size;$/;"	m	struct:SENNA_SRL_
+ll_caps_size	SENNA_VBS.h	/^    int ll_caps_size;$/;"	m	struct:SENNA_VBS_
+ll_caps_weight	SENNA_CHK.h	/^    float *ll_caps_weight;$/;"	m	struct:SENNA_CHK_
+ll_caps_weight	SENNA_NER.h	/^    float *ll_caps_weight;$/;"	m	struct:SENNA_NER_
+ll_caps_weight	SENNA_POS.h	/^    float *ll_caps_weight;$/;"	m	struct:SENNA_POS_
+ll_caps_weight	SENNA_PT0.h	/^    float *ll_caps_weight;$/;"	m	struct:SENNA_PT0_
+ll_caps_weight	SENNA_SRL.h	/^    float *ll_caps_weight;$/;"	m	struct:SENNA_SRL_
+ll_caps_weight	SENNA_VBS.h	/^    float *ll_caps_weight;$/;"	m	struct:SENNA_VBS_
+ll_chkl_max_idx	SENNA_SRL.h	/^    int ll_chkl_max_idx;$/;"	m	struct:SENNA_SRL_
+ll_chkl_padding_idx	SENNA_SRL.h	/^    int ll_chkl_padding_idx;$/;"	m	struct:SENNA_SRL_
+ll_chkl_size	SENNA_SRL.h	/^    int ll_chkl_size;$/;"	m	struct:SENNA_SRL_
+ll_chkl_weight	SENNA_SRL.h	/^    float *ll_chkl_weight;$/;"	m	struct:SENNA_SRL_
+ll_gazl_max_idx	SENNA_NER.h	/^    int ll_gazl_max_idx;$/;"	m	struct:SENNA_NER_
+ll_gazl_size	SENNA_NER.h	/^    int ll_gazl_size;$/;"	m	struct:SENNA_NER_
+ll_gazl_weight	SENNA_NER.h	/^    float *ll_gazl_weight;$/;"	m	struct:SENNA_NER_
+ll_gazm_max_idx	SENNA_NER.h	/^    int ll_gazm_max_idx;$/;"	m	struct:SENNA_NER_
+ll_gazm_size	SENNA_NER.h	/^    int ll_gazm_size;$/;"	m	struct:SENNA_NER_
+ll_gazm_weight	SENNA_NER.h	/^    float *ll_gazm_weight;$/;"	m	struct:SENNA_NER_
+ll_gazo_max_idx	SENNA_NER.h	/^    int ll_gazo_max_idx;$/;"	m	struct:SENNA_NER_
+ll_gazo_size	SENNA_NER.h	/^    int ll_gazo_size;$/;"	m	struct:SENNA_NER_
+ll_gazo_weight	SENNA_NER.h	/^    float *ll_gazo_weight;$/;"	m	struct:SENNA_NER_
+ll_gazp_max_idx	SENNA_NER.h	/^    int ll_gazp_max_idx;$/;"	m	struct:SENNA_NER_
+ll_gazp_size	SENNA_NER.h	/^    int ll_gazp_size;$/;"	m	struct:SENNA_NER_
+ll_gazp_weight	SENNA_NER.h	/^    float *ll_gazp_weight;$/;"	m	struct:SENNA_NER_
+ll_gazt_padding_idx	SENNA_NER.h	/^    int ll_gazt_padding_idx;$/;"	m	struct:SENNA_NER_
+ll_posl_max_idx	SENNA_CHK.h	/^    int ll_posl_max_idx;$/;"	m	struct:SENNA_CHK_
+ll_posl_max_idx	SENNA_PT0.h	/^    int ll_posl_max_idx;$/;"	m	struct:SENNA_PT0_
+ll_posl_max_idx	SENNA_VBS.h	/^    int ll_posl_max_idx;$/;"	m	struct:SENNA_VBS_
+ll_posl_padding_idx	SENNA_CHK.h	/^    int ll_posl_padding_idx;$/;"	m	struct:SENNA_CHK_
+ll_posl_padding_idx	SENNA_PT0.h	/^    int ll_posl_padding_idx;$/;"	m	struct:SENNA_PT0_
+ll_posl_padding_idx	SENNA_VBS.h	/^    int ll_posl_padding_idx;$/;"	m	struct:SENNA_VBS_
+ll_posl_size	SENNA_CHK.h	/^    int ll_posl_size;$/;"	m	struct:SENNA_CHK_
+ll_posl_size	SENNA_PT0.h	/^    int ll_posl_size;$/;"	m	struct:SENNA_PT0_
+ll_posl_size	SENNA_VBS.h	/^    int ll_posl_size;$/;"	m	struct:SENNA_VBS_
+ll_posl_weight	SENNA_CHK.h	/^    float *ll_posl_weight;$/;"	m	struct:SENNA_CHK_
+ll_posl_weight	SENNA_PT0.h	/^    float *ll_posl_weight;$/;"	m	struct:SENNA_PT0_
+ll_posl_weight	SENNA_VBS.h	/^    float *ll_posl_weight;$/;"	m	struct:SENNA_VBS_
+ll_posv_max_idx	SENNA_SRL.h	/^    int ll_posv_max_idx;$/;"	m	struct:SENNA_SRL_
+ll_posv_size	SENNA_SRL.h	/^    int ll_posv_size;$/;"	m	struct:SENNA_SRL_
+ll_posv_weight	SENNA_SRL.h	/^    float *ll_posv_weight;$/;"	m	struct:SENNA_SRL_
+ll_posw_max_idx	SENNA_SRL.h	/^    int ll_posw_max_idx;$/;"	m	struct:SENNA_SRL_
+ll_posw_size	SENNA_SRL.h	/^    int ll_posw_size;$/;"	m	struct:SENNA_SRL_
+ll_posw_weight	SENNA_SRL.h	/^    float *ll_posw_weight;$/;"	m	struct:SENNA_SRL_
+ll_suff_max_idx	SENNA_POS.h	/^    int ll_suff_max_idx;$/;"	m	struct:SENNA_POS_
+ll_suff_padding_idx	SENNA_POS.h	/^    int ll_suff_padding_idx;$/;"	m	struct:SENNA_POS_
+ll_suff_size	SENNA_POS.h	/^    int ll_suff_size;$/;"	m	struct:SENNA_POS_
+ll_suff_weight	SENNA_POS.h	/^    float *ll_suff_weight;$/;"	m	struct:SENNA_POS_
+ll_word_max_idx	SENNA_CHK.h	/^    int ll_word_max_idx;$/;"	m	struct:SENNA_CHK_
+ll_word_max_idx	SENNA_NER.h	/^    int ll_word_max_idx;$/;"	m	struct:SENNA_NER_
+ll_word_max_idx	SENNA_POS.h	/^    int ll_word_max_idx;$/;"	m	struct:SENNA_POS_
+ll_word_max_idx	SENNA_PT0.h	/^    int ll_word_max_idx;$/;"	m	struct:SENNA_PT0_
+ll_word_max_idx	SENNA_SRL.h	/^    int ll_word_max_idx;$/;"	m	struct:SENNA_SRL_
+ll_word_max_idx	SENNA_VBS.h	/^    int ll_word_max_idx;$/;"	m	struct:SENNA_VBS_
+ll_word_padding_idx	SENNA_CHK.h	/^    int ll_word_padding_idx;$/;"	m	struct:SENNA_CHK_
+ll_word_padding_idx	SENNA_NER.h	/^    int ll_word_padding_idx;$/;"	m	struct:SENNA_NER_
+ll_word_padding_idx	SENNA_POS.h	/^    int ll_word_padding_idx;$/;"	m	struct:SENNA_POS_
+ll_word_padding_idx	SENNA_PT0.h	/^    int ll_word_padding_idx;$/;"	m	struct:SENNA_PT0_
+ll_word_padding_idx	SENNA_SRL.h	/^    int ll_word_padding_idx;$/;"	m	struct:SENNA_SRL_
+ll_word_padding_idx	SENNA_VBS.h	/^    int ll_word_padding_idx;$/;"	m	struct:SENNA_VBS_
+ll_word_size	SENNA_CHK.h	/^    int ll_word_size;$/;"	m	struct:SENNA_CHK_
+ll_word_size	SENNA_NER.h	/^    int ll_word_size;$/;"	m	struct:SENNA_NER_
+ll_word_size	SENNA_POS.h	/^    int ll_word_size;$/;"	m	struct:SENNA_POS_
+ll_word_size	SENNA_PT0.h	/^    int ll_word_size;$/;"	m	struct:SENNA_PT0_
+ll_word_size	SENNA_SRL.h	/^    int ll_word_size;$/;"	m	struct:SENNA_SRL_
+ll_word_size	SENNA_VBS.h	/^    int ll_word_size;$/;"	m	struct:SENNA_VBS_
+ll_word_weight	SENNA_CHK.h	/^    float *ll_word_weight;$/;"	m	struct:SENNA_CHK_
+ll_word_weight	SENNA_NER.h	/^    float *ll_word_weight;$/;"	m	struct:SENNA_NER_
+ll_word_weight	SENNA_POS.h	/^    float *ll_word_weight;$/;"	m	struct:SENNA_POS_
+ll_word_weight	SENNA_PT0.h	/^    float *ll_word_weight;$/;"	m	struct:SENNA_PT0_
+ll_word_weight	SENNA_SRL.h	/^    float *ll_word_weight;$/;"	m	struct:SENNA_SRL_
+ll_word_weight	SENNA_VBS.h	/^    float *ll_word_weight;$/;"	m	struct:SENNA_VBS_
+main	SENNA_main.c	/^int main(int argc, char *argv[])$/;"	f
+max_entity_size	SENNA_Tokenizer.h	/^    int max_entity_size;$/;"	m	struct:SENNA_Tokenizer_
+max_sentence_size	SENNA_Tokenizer.h	/^    int max_sentence_size;$/;"	m	struct:SENNA_Tokenizer_
+max_tokens	SENNA_Tokenizer.h	/^    int max_tokens;$/;"	m	struct:SENNA_Tokenizer_
+n	SENNA_Tokenizer.h	/^    int n;$/;"	m	struct:SENNA_Tokens_
+n_numbers	SENNA_Tokenizer.h	/^    int n_numbers;$/;"	m	struct:SENNA_Tokenizer_
+number_sizes	SENNA_Tokenizer.h	/^    int *number_sizes;$/;"	m	struct:SENNA_Tokenizer_
+numbers	SENNA_Tokenizer.h	/^    char **numbers;$/;"	m	struct:SENNA_Tokenizer_
+output_state	SENNA_CHK.h	/^    float *output_state;$/;"	m	struct:SENNA_CHK_
+output_state	SENNA_NER.h	/^    float *output_state;$/;"	m	struct:SENNA_NER_
+output_state	SENNA_POS.h	/^    float *output_state;$/;"	m	struct:SENNA_POS_
+output_state	SENNA_PT0.h	/^    float *output_state;$/;"	m	struct:SENNA_PT0_
+output_state	SENNA_SRL.h	/^    float *output_state;$/;"	m	struct:SENNA_SRL_
+output_state	SENNA_VBS.h	/^    float *output_state;$/;"	m	struct:SENNA_VBS_
+output_state_size	SENNA_CHK.h	/^    int output_state_size;$/;"	m	struct:SENNA_CHK_
+output_state_size	SENNA_NER.h	/^    int output_state_size;$/;"	m	struct:SENNA_NER_
+output_state_size	SENNA_POS.h	/^    int output_state_size;$/;"	m	struct:SENNA_POS_
+output_state_size	SENNA_PT0.h	/^    int output_state_size;$/;"	m	struct:SENNA_PT0_
+output_state_size	SENNA_SRL.h	/^    int output_state_size;$/;"	m	struct:SENNA_SRL_
+output_state_size	SENNA_VBS.h	/^    int output_state_size;$/;"	m	struct:SENNA_VBS_
+sentence	SENNA_Tokenizer.h	/^    char *sentence;$/;"	m	struct:SENNA_Tokenizer_
+sentence_posv	SENNA_SRL.h	/^    int *sentence_posv;    $/;"	m	struct:SENNA_SRL_
+sentence_posw	SENNA_SRL.h	/^    int *sentence_posw;$/;"	m	struct:SENNA_SRL_
+size	SENNA_Hash.h	/^    int size;$/;"	m	struct:SENNA_Hash_
+suff_hash	SENNA_Tokenizer.h	/^    SENNA_Hash *suff_hash;$/;"	m	struct:SENNA_Tokenizer_
+suff_hash_nosuffix_idx	SENNA_Tokenizer.h	/^    int suff_hash_nosuffix_idx;$/;"	m	struct:SENNA_Tokenizer_
+suff_idx	SENNA_Tokenizer.h	/^    int *suff_idx;$/;"	m	struct:SENNA_Tokens_
+tokenize_gazetteer	SENNA_Tokenizer.c	/^static void tokenize_gazetteer(int **gazt_idx_, SENNA_Tokenizer *tokenizer, SENNA_Hash *hash)$/;"	f	file:
+tokens	SENNA_Tokenizer.h	/^    SENNA_Tokens *tokens;$/;"	m	struct:SENNA_Tokenizer_
+viterbi_score_init	SENNA_CHK.h	/^    float *viterbi_score_init;$/;"	m	struct:SENNA_CHK_
+viterbi_score_init	SENNA_NER.h	/^    float *viterbi_score_init;$/;"	m	struct:SENNA_NER_
+viterbi_score_init	SENNA_POS.h	/^    float *viterbi_score_init;$/;"	m	struct:SENNA_POS_
+viterbi_score_init	SENNA_PT0.h	/^    float *viterbi_score_init;$/;"	m	struct:SENNA_PT0_
+viterbi_score_init	SENNA_SRL.h	/^    float *viterbi_score_init;$/;"	m	struct:SENNA_SRL_
+viterbi_score_trans	SENNA_CHK.h	/^    float *viterbi_score_trans;$/;"	m	struct:SENNA_CHK_
+viterbi_score_trans	SENNA_NER.h	/^    float *viterbi_score_trans;$/;"	m	struct:SENNA_NER_
+viterbi_score_trans	SENNA_POS.h	/^    float *viterbi_score_trans;$/;"	m	struct:SENNA_POS_
+viterbi_score_trans	SENNA_PT0.h	/^    float *viterbi_score_trans;$/;"	m	struct:SENNA_PT0_
+viterbi_score_trans	SENNA_SRL.h	/^    float *viterbi_score_trans;$/;"	m	struct:SENNA_SRL_
+window_size	SENNA_CHK.h	/^    int window_size;$/;"	m	struct:SENNA_CHK_
+window_size	SENNA_NER.h	/^    int window_size;$/;"	m	struct:SENNA_NER_
+window_size	SENNA_POS.h	/^    int window_size;$/;"	m	struct:SENNA_POS_
+window_size	SENNA_PT0.h	/^    int window_size;$/;"	m	struct:SENNA_PT0_
+window_size	SENNA_SRL.h	/^    int window_size;$/;"	m	struct:SENNA_SRL_
+window_size	SENNA_VBS.h	/^    int window_size;$/;"	m	struct:SENNA_VBS_
+word_hash	SENNA_Tokenizer.h	/^    SENNA_Hash *word_hash;$/;"	m	struct:SENNA_Tokenizer_
+word_hash_unknown_idx	SENNA_Tokenizer.h	/^    int word_hash_unknown_idx;$/;"	m	struct:SENNA_Tokenizer_
+word_idx	SENNA_Tokenizer.h	/^    int *word_idx;$/;"	m	struct:SENNA_Tokens_
+words	SENNA_Tokenizer.h	/^    char **words;$/;"	m	struct:SENNA_Tokens_
+words_sizes	SENNA_Tokenizer.h	/^    int *words_sizes;$/;"	m	struct:SENNA_Tokenizer_
