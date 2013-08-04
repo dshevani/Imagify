@@ -65,7 +65,7 @@ arr=document.getElementsByClassName("voh-parent");
 console.log(arr);
 
 cnt = 0;
-var server_url = "http://10.105.15.59/Imagify/hack/index.php?id=";
+var server_url = "http://10.105.15.59/hack/index.php?id=";
 var thestringurl = "&url=";
 var li_id, data_url, final_url;
 
