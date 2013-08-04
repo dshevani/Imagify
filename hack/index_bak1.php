@@ -1,35 +1,25 @@
-/*
-Author  : Jayaprakash S
-Email   : osjayaprakash [at] gmail [dot] com
-Purpose : see readme section
-
-*/
+<?php
+	header("content-type: application/json");
+?>
 
 <?php
-
-header("content-type: application/json");
-
-$br = "\r\n";
-
-
+$br = "<br>";
 $data_url = $_REQUEST['url'];
-$divid = $_REQUEST['id'];
-#$data_url = 'http://news.yahoo.com/france-close-embassy-yemen-temporarily-security-fears-005044017.html';
-#$divid = '121';
-
 $data_url = urldecode($data_url);
+//echo $data_url;
 $keywords = "";
 $xpath2 = "//div[contains(@class,\"description\")]/p";
 $xpath1 = "//div[contains(@class,\"title\")]/p";
 $title = "";
 $description = "";
+$divid = $_REQUEST['id'];
 
-$up = '123050045:xxxxxxxxxx';
-$defaultImage = 'http://www.cse.iitb.ac.in/~umangmathur/images/no_image.jpg';
-
+$up = '123050045:legend4635211$';
+$defaultImage = 'http://www.cse.iitb.ac.in/~umangmathur/images/no_image.png';
 ### proxy for libxml ###
 
 $auth = base64_encode($up);
+#echo $auth;
 $r_default_context = stream_context_get_default ( array 
                 (
                 'http' => array( 
@@ -45,7 +35,6 @@ $r_default_context = stream_context_get_default ( array
             	) 
         ); 
 libxml_set_streams_context($r_default_context); 
-
 
 ### Fetching Title, Descriptions ###
 
@@ -81,9 +70,7 @@ echo "Descriptions=".$description.$br;
 
 $keywords = $title;
 $keywords = exec("/var/www/hack/senna \"$title\"", $retval);
-
 //echo $keywords;
-
 ####### Fetch Imagle List ########################
 
 require("OAuth.php");
@@ -114,72 +101,37 @@ $result = $html->xpath('/bossresponse/images/results/result');
 #echo $result; 
 #print_r($result);
 
+
 $ch = curl_init($yql_query_url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 curl_setopt($ch, CURLOPT_PROXY, 'netmon.iitb.ac.in:80');
 curl_setopt($ch, CURLOPT_PROXYUSERPWD, $up);
+
 $yql_url = "http://swoogle.umbc.edu/StsService/GetStsSim?operation=api&phrase1=".urlencode($title);
 $maxurl = "";
 $maxthumbnailurl = "";
 $maxtitle = "";
 $maxscore = 0.0;
-
-$results = array();
 foreach( $result as $element ){
-		$arr = array();
-		$arr['simscore'] = 0.0;
-		$arr['lmscore'] = 0.0;
-		$arr['url'] = $element->url;
-		$arr['title'] = $element->title;
-		$arr['thumbnailurl'] = $element->thumbnailurl;
-		array_push($results,$arr);
-		
-		## LM SCORE
-		
-		$file_handle=fopen("/opt/tools/tp.txt","w");
-		fprintf($file_handle,"%s", $arr['title']);
-		fclose($file_handle);
-		$lmscore = system('/opt/tools/srilm/bin/i686-m64/ngram -use-server 8998@localhost -ppl /opt/tools/tp.txt | grep logprob | cut -f4 -d" "', $retval);
-		$arr['lmscore'] = $lmscore;
-		
-		
-		## Similarity Score
-		
-		$yql_query_url = $yql_url."&phrase2=" . urlencode($element->title);
-		curl_setopt($ch, CURLOPT_URL, $yql_query_url);
-		$score = curl_exec($ch);
-		$arr['simscore'] = $score;
-		
-		## Filter out meta with less lm score and choose one with high similarity
-		
-		$words = explode(" ", $element->title);
-		$word_count = sizeof($words);
-		$minscore = -8.0*$word_count;
-		
-		if($lmscore < $minscore){
-			## This meta data is ignored
-		}else if($score>$maxscore){
-			$maxscore = $score;
-			$maxtitle = $element->title;
-			$maxurl = $element->url;
-			$maxthumbnailurl = $element->thumbnailurl;
-		}
-
-		/*
-		echo $lmscore.$br;
-		echo $score.$br;
-		echo $element->title.$br;
-		echo $element->url.$br;
-		echo $element->thumbnailurl.$br;
-		*/
-		
+	$yql_query_url = $yql_url."&phrase2=" . urlencode($element->title);
+	curl_setopt($ch, CURLOPT_URL, $yql_query_url);
+	$html = curl_exec($ch);
+	if($html>$maxscore){
+		$maxscore = $html;
+		$maxtitle = $element->title;
+		$maxurl = $element->url;
+		$maxthumbnailurl = $element->thumbnailurl;
+	}
+/*
+	echo $html.$br;
+	echo $element->title.$br;
+	echo $element->url.$br;
+	echo $element->thumbnailurl.$br;
+*/
 }
-
-
 if($maxscore<0.40){
 	$maxurl = $defaultImage;
 }
-
 /*
 echo $maxscore.$br;
 echo $maxtitle.$br;
