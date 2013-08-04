@@ -11,7 +11,7 @@ var cnt = 0;
 var img_url_response, data_uuid_response;
 
 function getUrl(url) {
-  var scriptEl = document.createElement("script");
+	var scriptEl = document.createElement("script");
 	scriptEl.src = url;
 	scriptEl.async = true;
 	console.log(document.getElementsByTagName("head"));
@@ -26,13 +26,16 @@ window.urlCallback = function (responseData) {
 	parseJSONurls = responseData;
 	var obj = JSON.parse(responseData);
 	var li_item = $("[data-uuid=" + obj.id + "]")[0];
-	li_item.style.backgroundColor="#f8e2f5"; 
-	var divlevel1 = li_item.getElementsByTagName("div")[0].innerHTML;
+	li_item.style.backgroundColor="#E7CCFF";//"#F9E0FF"; 
+	//var divlevel1 = li_item.getElementsByTagName("div")[0].innerHTML;
 	
-	divlevel1 = '<a class=\"img ov-h thumb-left  \" href=\"' + obj.url + '\" data-action-outcome=\"navigate\" data-ylk=\"sec:td-strm;ed:0;bpos:1;pos:1; cpos:6;g:b4712847-f81d-35b8-9489-342ab672b0af;tar:news.yahoo.com;ltxt:A-Rodhom; ct:1;pkgt:4;r:4000000595;slk:title;itc:0;prov:AssociatedPress;sort:1; test:Precog_On;intl:us;cat:default;ccode:news;\" tabindex=\"-1\"  data-rapid_p=\"26\"><img src=\"' + obj.url + '\" style=\"\" width=\"82\" height=\"100\" alt=\"\" title=\"\" class=\"\"></a>' + divlevel1;
-        li_item.getElementsByTagName("div")[0].innerHTML = divlevel1;
+	//divlevel1 = '<a class=\"img ov-h thumb-left  \" href=\"' + "http://www.cse.iitb.ac.in/~umangmathur/images/load.gif" + '\" data-action-outcome=\"navigate\" data-ylk=\"sec:td-strm;ed:0;bpos:1;pos:1; cpos:6;g:b4712847-f81d-35b8-9489-342ab672b0af;tar:news.yahoo.com;ltxt:A-Rodhom; ct:1;pkgt:4;r:4000000595;slk:title;itc:0;prov:AssociatedPress;sort:1; test:Precog_On;intl:us;cat:default;ccode:news;\" tabindex=\"-1\"  data-rapid_p=\"26\"><img src=\"' + "http://www.cse.iitb.ac.in/~umangmathur/images/load.gif" + '\" style=\"\" width=\"82\" height=\"100\" alt=\"\" title=\"\" class=\"\"></a>' + divlevel1;
+       // li_item.getElementsByTagName("div")[0].innerHTML = divlevel1;
+       
+       
         li_item.getElementsByTagName("div")[0].getElementsByTagName("a")[0].href = obj.url;
-        li_item.getElementsByTagName("div")[0].getElementsByTagName("a")[0].getElementsByTagName("img").src = obj.url;
+        //alert(li_item.getElementsByTagName("div")[0].getElementsByTagName("a")[0].href);
+        li_item.getElementsByTagName("div")[0].getElementsByTagName("a")[0].getElementsByTagName("img")[0].src = obj.url;
 	
 };
 
@@ -78,6 +81,9 @@ for (var i=0;i<arr.length;i++) {
 		li_id = arr[i].getAttribute("data-uuid");
 		data_url = arr[i].getAttribute("data-url");
 	
+		divlevel1 = '<a class=\"img ov-h thumb-left  \" href=\"' + "http://www.cse.iitb.ac.in/~umangmathur/images/load.gif" + '\" data-action-outcome=\"navigate\" data-ylk=\"sec:td-strm;ed:0;bpos:1;pos:1; cpos:6;g:b4712847-f81d-35b8-9489-342ab672b0af;tar:news.yahoo.com;ltxt:A-Rodhom; ct:1;pkgt:4;r:4000000595;slk:title;itc:0;prov:AssociatedPress;sort:1; test:Precog_On;intl:us;cat:default;ccode:news;\" tabindex=\"-1\"  data-rapid_p=\"26\"><img src=\"' + "http://www.cse.iitb.ac.in/~umangmathur/images/load.gif" + '\" style=\"\" width=\"82\" height=\"100\" alt=\"\" title=\"\" class=\"\"></a>' + divlevel1;
+		
+		arr[i].getElementsByTagName("div")[0].innerHTML = divlevel1;
 		
 	       	final_url = server_url + li_id + thestringurl + data_url;
 	       	getUrl(final_url);
@@ -89,4 +95,5 @@ for (var i=0;i<arr.length;i++) {
 window.onscroll = imagify;
 
 imagify();
+
 
