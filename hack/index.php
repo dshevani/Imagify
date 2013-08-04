@@ -18,7 +18,7 @@ $xpath1 = "//div[contains(@class,\"title\")]/p";
 $title = "";
 $description = "";
 
-$up = '123050045:legend4635211$';
+$up = '123050045:xxxxxxxxxx';
 $defaultImage = 'http://www.cse.iitb.ac.in/~umangmathur/images/no_image.jpg';
 ### proxy for libxml ###
 
