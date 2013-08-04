@@ -12,7 +12,7 @@ How : Using Yahoo! Boss API, you may need to get your own consumer key and consu
 3) Filter the images which does not have good description. 
 
 How : We took 12Lac English sentences to train langauage model(Which is used part of machine translation system),
-sentences with less probability score are filtered.
+sentences with less probability score(not proper english sentence) are filtered.
 
 4) We score Semantic Text Similarity between description of images with Article Text. 
 
@@ -31,4 +31,5 @@ all the above steps.
 Greasemonkey script needs to be installed in your firefox browser, which will interact with local server and insert the image 
 to article.
 
+May need to build your language model on your own (we did not include n-gram or language model file with this).
 
