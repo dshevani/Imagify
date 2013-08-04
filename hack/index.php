@@ -1,9 +1,16 @@
-<?php
-	header("content-type: application/json");
-?>
+/*
+Author  : Jayaprakash S
+Email   : osjayaprakash [at] gmail [dot] com
+Purpose : see readme section
+
+*/
 
 <?php
+
+header("content-type: application/json");
+
 $br = "\r\n";
+
 
 $data_url = $_REQUEST['url'];
 $divid = $_REQUEST['id'];
@@ -11,7 +18,6 @@ $divid = $_REQUEST['id'];
 #$divid = '121';
 
 $data_url = urldecode($data_url);
-//echo $data_url;
 $keywords = "";
 $xpath2 = "//div[contains(@class,\"description\")]/p";
 $xpath1 = "//div[contains(@class,\"title\")]/p";
@@ -20,10 +26,10 @@ $description = "";
 
 $up = '123050045:xxxxxxxxxx';
 $defaultImage = 'http://www.cse.iitb.ac.in/~umangmathur/images/no_image.jpg';
+
 ### proxy for libxml ###
 
 $auth = base64_encode($up);
-#echo $auth;
 $r_default_context = stream_context_get_default ( array 
                 (
                 'http' => array( 
@@ -39,6 +45,7 @@ $r_default_context = stream_context_get_default ( array
             	) 
         ); 
 libxml_set_streams_context($r_default_context); 
+
 
 ### Fetching Title, Descriptions ###
 
@@ -74,7 +81,9 @@ echo "Descriptions=".$description.$br;
 
 $keywords = $title;
 $keywords = exec("/var/www/hack/senna \"$title\"", $retval);
+
 //echo $keywords;
+
 ####### Fetch Imagle List ########################
 
 require("OAuth.php");
